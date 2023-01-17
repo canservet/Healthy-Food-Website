@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem 9%;
+position: fixed;
+top:0; left:0; right:0;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+background-color: #fff;
+z-index: 100;
+}
+
+nav a{
+   text-decoration: none;
+   font-size: 20px;
+   color: rgb(66, 61, 61);
+  margin: 15px;
+   
+}
+
+nav img{
+    width: 9%;
+}
+
+
+
+
+section {
+    min-height: 100vh;
+    padding: 0 3%;
+    padding-top: 9rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    position: relative;
+    max-width: 70vh;
+    right:15%;
+}
+.home .content h3{
+    font-size: 45px;
+    color:rgb(119, 182, 56)
+}
+
+.home .content p{
+color: rgb(116, 115, 115);
+font-weight: lighter bold;
+}
+
+.home .content button{
+ background-color: rgb(130, 122, 122);
+ padding: 10px;
+ margin: 20px -1px;
+ font-size: large;
+ border: none;
+ box-shadow: 1px 2px 4px 1px rgba(0,0,0,.4);
+ color: #fff;
+ cursor: pointer;
+}
+.home .content button:hover{
+    background-color: rgb(109, 107, 107);
+}
+
+
+/* Featured Products*/
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature h1{
+   font-size: 45px;
+   color: rgb(76, 154, 76);
+   background-color: rgb(218, 228, 204);
+   width: 50%;
+
+
+
+}
+
+.feature .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.feature .container .box {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 20rem;
+    border:1px solid rgba(0,0,0,.1);
+    
+    
+   
+}
+.feature .container .box  img{
+    max-width:90%;
+}
+
+.feature .container .box h3{
+    color: rgb(118, 115, 115);
+}
+
+.feature .container .box .star i{
+    color: gold;
+   padding:2px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+.feature .container .box .box-content .price{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+  
+}
+.feature .container .box .box-content p{
+    color: rgb(75, 72, 72);
+    font-size: 15px;
+    margin-top: 1px;
+    padding: 10px;
+    text-decoration:line-through;
+
+}
+.feature .container .box .box-content span{
+    color: rgb(95, 88, 88);
+    font-size: 25px; 
+    text-decoration: none;
+     }
+
+   .feature .container .box .icons{
+    margin-top: 10px;
+    text-align:center ;
+    
+   }
+
+
+
+   .feature .container .box a{
+    text-decoration: none;
+    color: gray;
+    border:1px solid;
+    margin: 10px;
+    padding: 10px;
+   
+   }
+ .feature .container .box a:hover{
+    color: rgb(169, 178, 169);
+    background-color: rgb(227, 227, 227);
+ }
+
+
+
+
+ .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .about h1{
+    font-size: 45px;
+    color: rgb(76, 154, 76);
+   background-color: rgb(218, 228, 204);
+   width: 50%;
+ }
+
+ .about .container{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+ }
+ .about .container .content{
+    width: 500px;
+ }
+ .about .container .content h3{
+color: rgb(118, 172, 118);
+
+
+ }
+
+ .about .container .content p{
+    color: rgb(72, 75, 72);
+    margin-top:20px;
+    flex: 1 1 40rem;
+    
+   }
+
+   .about .container button{
+    background-color: rgb(130, 122, 122);
+    padding: 10px;
+    margin: 20px -1px;
+    font-size: large;
+    border: none;
+    box-shadow: 1px 2px 4px 1px rgba(0,0,0,.4);
+    color: #fff;
+    position: relative;
+    right: 40%;
+    
+    
+   }
+   .service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+   }
+
+   .service h1{
+    font-size: 45px;
+    color: rgb(76, 154, 76);
+   background-color: rgb(218, 228, 204);
+   width: 50%;
+   }
+
+
+
+   .service .box-container{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   }
+
+   .service .box-container .box{
+  text-align: center;
+  width: 30rem;
+  margin: 2rem;
+
+   }
+
+   .service .box-container .box i{
+    font-size: 80px;
+    color: #aaa;
+    padding: 1rem;
+   }
+
+   .service .box-container .box h3{
+    color: rgb(105, 146, 34);
+   }
+
+
+   .review{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+   .review .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+   }
+   .review .box-container .box{
+    margin: 2rem;
+    padding: 2rem;
+   }
